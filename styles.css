@@ -1,0 +1,176 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #434340;
+    font-family: 'Roboto', sans-serif;
+}
+
+.navbar-content {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    margin: 0 50px 0 50px;
+}
+
+.navbar {
+    background-color: #202224;
+}
+
+.navbar-logo {
+    text-decoration: none;
+    color: white;
+}
+
+.navbar-list {
+    list-style: none;
+}
+
+.navbar-link {
+    margin-left: 10px;
+    color: #E5C25C;
+    transition: .3s ease-in-out;
+    font-size: small;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.navbar-link:hover{ 
+    color: white;
+    transition: .3s ease-in-out;
+}
+
+.about, .our-work, .contact {
+    padding: 15px;
+    margin: 25px 50px 0 50px;
+}
+
+.about-header, .work-header, .contact-header {
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 35px;
+    color: white;
+}
+
+.flex-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.first-content, .second-content {
+    width: 50%
+}
+
+.first-content p {
+    color: rgb(160, 156, 156);
+    font-weight: bold;
+    width: 70%;
+}
+
+.about-headings {
+    color: white;
+    margin-bottom: 15px;
+}
+
+.specialization-list {
+    list-style: none;
+}
+
+.specialization-list a {
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+    display: block;
+    margin-top: 15px;;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+
+.grid-item {
+  padding: 20px;
+  text-align: center;
+}
+
+/* 576px, 768px */
+
+.grid-item p {
+    color: white;
+    margin-top: 10px;
+    
+}
+
+.grid-image {
+    width: 75%;
+    object-fit: fill;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-label {
+    font-size: small;
+    color: white;
+    margin-bottom: 5px;
+}
+
+.form-inputs {
+    margin-bottom: 7px;
+    border: 1px solid rgb(172, 171, 166);
+    background: #202224;
+    color: white;
+    padding: 6px;
+    outline: none;
+    width: 75%;
+}
+
+.form-button {
+    color: rgb(172, 171, 166);
+    color: black;
+    padding: 6px;
+    width: 75%;
+}
+
+.map {
+    width: 400px;
+    height: 250px;
+    border: none;
+}
+
+@media  screen and (max-width:600px) {
+    .container{
+        max-width: 100%; 
+        overflow-x: hidden; }
+
+    .flex-container {
+        display: block;
+    }
+    .first-content, .second-content {
+        width: 100%;
+    }
+    .first-content p {
+        width: 100%;
+        margin-bottom: 25px;
+    }
+    .grid-container {
+        display: block;
+    }
+    .form-inputs, .form-button {
+        width: 100%;
+    }
+    .map {
+        width: 350px;
+        height: 200px;
+        margin-top: 15px;;
+    }
+}
